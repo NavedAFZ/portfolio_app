@@ -7,7 +7,8 @@ body{
 .left{
   
   background-color:#608f77;
-  color:black;
+  background-color:#242c3b;
+  color:white;
 
   display: grid;
   
@@ -25,7 +26,7 @@ body{
 
 }
 .left-1-a a{
-  color: black;
+  color: white;
 
 }
 .left-1-a a:hover{
@@ -61,7 +62,8 @@ color: blue;
 }
 .left-1-b a{
   text-decoration: none;
-  color: black;
+  color:white;
+  font-size: 30px;
   
 }
 .left-1-b li {
@@ -204,8 +206,26 @@ color: blue;
     height: 3.5rem;;
     width: 3.5rem;
   }
-
-
+/***************************footer************************/
+.footer{
+  padding: 0px 0px;;
+text-align: center;
+text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: #0f1522;
+  color: white;
+}
+.footer-center{
+  padding-top: 30px;
+  background-color: #1e2535;
+  font-size: 30px;
+}
+.footer-right{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+}
 /***************************************************************/
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
@@ -231,7 +251,11 @@ color: blue;
     width: 300px;
   
 }
-  
+  .footer{
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
   
 }
 /****************************************************************/
@@ -258,6 +282,11 @@ color: blue;
     height: 200px;
       width: 300px;
     
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 100%;
+
   }
 }
 /****************************************************************/
